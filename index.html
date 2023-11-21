@@ -13,7 +13,7 @@
         <div class="container">
             <!-- al evento click del bottone avvio la funzione (10) volte -->
             <button @click="generateEmails(10)">Show 10 emails</button>
-            <ul>
+            <ul v-if="emails.length >= 10">
                 <!-- genero un li per ogni elemento dell'array emails[] in data -->
                 <li v-for="email in emails" :key="email">
                     <!-- interpolazione per mostrare l'elemento email in array emails[] -->
