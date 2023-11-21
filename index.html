@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- collegamento vue cdn -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Vue Email List</title>
 </head>
 <body>
     <div id="app">
-
+        <div class="container">
+            <button @click="generateEmails">Show 10 emails</button>
+            <ul>
+                <li>
+                    {{ }}
+                </li>
+            </ul>
+        </div>
     </div>
     <!-- collegamento axios cdn -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
